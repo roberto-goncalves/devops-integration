@@ -1,0 +1,28 @@
+version: '3'
+services:
+  nginx1:
+    build:
+      context: .
+      dockerfile: dockerfile_nginx
+    ports:
+      - 8081:80
+      - 8082:8080
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.5
+  nginx2:
+    build:
+      context: .
+      dockerfile: dockerfile_nginx
+    ports:
+      - 8083:80
+      - 8084:8080
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.6
+networks:
+  vpcbr:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 10.5.0.0/16

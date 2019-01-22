@@ -1,0 +1,25 @@
+version: '3'
+services:
+  container_a:
+    build:
+      context: .
+      dockerfile: Dockerfile_container_a
+    volumes:
+      - ./json_directory:/usr/src/app/json_directory
+      - ./xml_directory:/usr/src/app/xml_directory
+      - ./encrypt_directory:/usr/src/app/encrypt_directory
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DELETE_FILES=True
+  container_b:
+    build:
+      context: .
+      dockerfile: Dockerfile_container_b
+    volumes:
+      - ./encrypt_directory:/usr/src/app/encrypt_directory
+      - ./decrypt_directory:/usr/src/app/decrypt_directory
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DELETE_FILES=True
+
+
