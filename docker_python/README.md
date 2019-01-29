@@ -1,4 +1,4 @@
-Python with docker-compose pipeline
+Python with docker-compose pipeline for a integration between two containers for encrypt and decrypt JSON files
 
 - Objective: JSON -> XML -> encryption -> transfer -> decryption -> XML
 
