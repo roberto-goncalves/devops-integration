@@ -1,6 +1,4 @@
-Initialize docker using bash
-
- - Objective: create and install two docker containers with nginx and haproxy installed on both
+Create and install two docker containers with nginx and haproxy installed on both
 
 - INSTRUCTIONS
 
