@@ -1,5 +1,4 @@
-Task:
-Define Terraform provisioner to create infrastructure and deploy simple service (using remote exec) on AWS or Azure.
+Terraform with AWS(EC2 and RDS) deploying Mediawiki
 
 - EXECUTION
 
