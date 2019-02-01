@@ -77,13 +77,13 @@ variable "container_port" {
 # Github Repository Owner
 variable "git_repository_owner" {
   description = "Github Repository Owner"
-  default     = "msfidelis"
+  default     = "roberto-goncalves"
 }
 
 # Github Repository Project Name
 variable "git_repository_name" {
   description = "Project name on Github"
-  default     = "micro-api"
+  default     = "python-flask-api"
 }
 
 # Default Branch
