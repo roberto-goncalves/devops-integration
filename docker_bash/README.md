@@ -5,8 +5,8 @@ Create and install two docker containers with nginx and haproxy installed on bot
 
 ## INSTRUCTIONS
 
-	* script.sh is the starting script
-	* both containers have their respective dockerfile, that is relationated with the docker-compose YAML
+	- script.sh is the starting script
+	- both containers have their respective dockerfile, that is relationated with the docker-compose YAML
 
 ## EXPLANATION
 
