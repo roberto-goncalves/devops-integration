@@ -1,2 +1,2 @@
 
-## Terraform with ECS deployed with CodePipeline
+## Terraform/ECS deployed single container with CodePipeline on Fargate
