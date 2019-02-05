@@ -1,10 +1,13 @@
+
+## Docker-compose with HAProxy and Nginx on two containers
+
 Create and install two docker containers with nginx and haproxy installed on both
 
-- INSTRUCTIONS
+## INSTRUCTIONS
 
 	Execute: chmod +x script.sh && ./script.sh
 
-- EXPLANATION
+## EXPLANATION
 
 	1. docker-compose build to build containers and network
 	2. docker-compose up to run get containers running
@@ -14,7 +17,7 @@ Create and install two docker containers with nginx and haproxy installed on bot
 	6. After docker-compose up command being executed, haproxy command is sent to containers
 	7. Mapping ports can been seen in docker-compose.yml for further questions
 
-- ACCESS
+## ACCESS
 
 	0.0.0.0:8081 - Nginx from container1
 	0.0.0.0:8082/stats - HAProxy from container1 with auth: roberto:roberto
