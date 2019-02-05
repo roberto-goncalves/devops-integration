@@ -1,6 +1,6 @@
-## DevOps repository
+# DevOps repository
 
-# Projects
+## Projects
 
 - Docker-compose with HAProxy and Nginx on two containers
 - Python with docker-compose pipeline for a integration between two containers for encrypt and decrypt JSON files
