@@ -20,8 +20,8 @@ Create and install two docker containers with nginx and haproxy installed on bot
 
 ## ACCESS
 
-	- 0.0.0.0:8081 - Nginx from container1
-	- 0.0.0.0:8082/stats - HAProxy from container1 with auth: roberto:roberto
-	- 0.0.0.0:8083 - Nginx from container2
-        - 0.0.0.0:8084/stats - HAProxy from container2 with auth:	roberto:roberto
+- 0.0.0.0:8081 - Nginx from container1
+- 0.0.0.0:8082/stats - HAProxy from container1 with auth: roberto:roberto
+- 0.0.0.0:8083 - Nginx from container2
+- 0.0.0.0:8084/stats - HAProxy from container2 with auth: roberto:roberto
 	
