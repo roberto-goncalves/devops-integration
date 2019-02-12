@@ -1,0 +1,96 @@
+[
+  {
+      "name": "nginx",
+      "image": "461347155483.dkr.ecr.eu-central-1.amazonaws.com/images:nginx",
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 80
+        }
+      ],
+      "cpu": 512,
+      "memory": 2560,
+      "networkMode": "awsvpc",
+      "essential": true,
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "${log_group}",
+          "awslogs-region": "eu-central-1",
+          "awslogs-stream-prefix": "nginx"
+        }
+      },
+      "mountPoints": [
+        {
+          "sourceVolume": "log-dir",
+          "containerPath": "/var/log/nginx/"
+        }
+      ],
+      "environment": [
+        {
+          "name" : "PORT",
+          "value": "80"
+        }
+      ]
+  },
+  {
+    "name": "python_monitor",
+    "image": "461347155483.dkr.ecr.eu-central-1.amazonaws.com/images:python_monitor",
+    "cpu": 512,
+    "memory": 1024,
+    "networkMode": "awsvpc",
+    "essential": true,
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "${log_group}",
+        "awslogs-region": "eu-central-1",
+        "awslogs-stream-prefix": "python_monitor"
+      }
+    },
+    "mountPoints": [
+      {
+        "sourceVolume": "log-dir",
+        "containerPath": "/usr/log/"
+      }
+    ]
+  },
+  {
+    "name": "python_sender",
+    "image": "461347155483.dkr.ecr.eu-central-1.amazonaws.com/images:python_sender",
+    "cpu": 512,
+    "memory": 1024,
+    "networkMode": "awsvpc",
+    "essential": true,
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "${log_group}",
+        "awslogs-region": "eu-central-1",
+        "awslogs-stream-prefix": "python_sender"
+      }
+    }
+  },
+  {
+    "name": "mongodb",
+    "image": "mongo",
+    "portMappings": [
+      {
+        "containerPort": 27017,
+        "hostPort": 27017
+      }
+    ],
+    "cpu": 512,
+    "memory": 1536,
+    "networkMode": "awsvpc",
+    "essential": true,
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "${log_group}",
+        "awslogs-region": "eu-central-1",
+        "awslogs-stream-prefix": "mongodb"
+      }
+    }
+  }
+]

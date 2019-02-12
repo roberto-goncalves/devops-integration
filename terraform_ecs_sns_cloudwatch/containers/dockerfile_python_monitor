@@ -1,0 +1,13 @@
+FROM python:2
+LABEL maintainer="Roberto Gonçalves <roberto.forsaken@gmail.com>"
+
+WORKDIR /usr/src/app
+
+RUN mkdir /usr/log/
+
+RUN pip install pymongo
+
+COPY monitor-nginx-log.py .
+
+
+CMD [ "python", "-u", "./monitor-nginx-log.py" ]

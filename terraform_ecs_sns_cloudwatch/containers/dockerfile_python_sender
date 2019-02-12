@@ -1,0 +1,11 @@
+FROM python:2
+LABEL maintainer="Roberto Gonçalves <roberto.forsaken@gmail.com>"
+
+WORKDIR /usr/src/app
+
+RUN pip install pymongo
+
+COPY mongodb-send-email.py .
+
+
+CMD [ "python", "-u","./mongodb-send-email.py" ]
