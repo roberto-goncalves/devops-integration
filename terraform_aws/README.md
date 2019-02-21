@@ -1,9 +1,10 @@
 Terraform with AWS(EC2 and RDS) deploying Mediawiki
 
 - EXECUTION
-
-    terraform init
-    terraform apply
+```console
+$ terraform init
+$ terraform apply
+```
 
 - EXPLANATION
 
