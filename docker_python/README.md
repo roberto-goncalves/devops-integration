@@ -3,8 +3,10 @@ Python with docker-compose pipeline for a integration between two containers for
 - Objective: JSON -> XML -> encryption -> transfer -> decryption -> XML
 
 - INSTRUCTIONS
+```console
+root@root:~$ docker-compose up
+```
 
-   Execution: docker-compose up
    ATTENTION: set DELETE_FILES environment variable to False and see each file saved on directory.
    If DELETE_FILES == True, only directory that files will not be deleted is: decrypt_directory
 
