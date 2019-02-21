@@ -3,6 +3,6 @@
 
 Run with
 ```console
-foo@bar:~$ terraform init
-foo@bar:~$ terraform apply
+root@root:~$ terraform init
+root@root:~$ terraform apply
 ```
