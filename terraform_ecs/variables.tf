@@ -1,7 +1,3 @@
-################################
-###### QUICK EDIT'S HERE  ######
-################################
-
 ###### CLUSTER OPTIONS  ######
 
 # Customize the Cluster Name
