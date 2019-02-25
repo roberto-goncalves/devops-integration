@@ -74,10 +74,10 @@ variable "aws_region" {
 
 variable "aws_access_key" {
   description = "AWS AK"
-  default     = "AKIAJVKUREZPG2E5XMXA"
+  default     = "<default_key>"
 }
 
 variable "aws_secret_key" {
   description = "AWS SK"
-  default     = "RYrJE5N1A+Wyw+0wc/NsEss9obWZqnxFIWAgHK8j"
+  default     = "<default_access_key>"
 }
