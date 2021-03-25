@@ -53,7 +53,7 @@ PyPDF2==1.26.0
 python-dateutil==2.6.1
 python-magic<=0.4.16
 pyxdg==0.25
-PyYAML==3.12
+PyYAML==5.4
 regex==2017.12.12
 repoze.lru==0.7
 Routes==2.4.1
